@@ -1,0 +1,8 @@
+.ip_parts {
+    width: 60px;
+    border: 1px solid #456fd4;
+}
+.subnet {
+    width: 50px;
+    border: 1px solid #456fd4;
+}

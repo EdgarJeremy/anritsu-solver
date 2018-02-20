@@ -1,0 +1,33 @@
+{
+  "name": "anritsu-solver",
+  "version": "1.0.0",
+  "description": "Program solving soal VLSM mner anritsu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdgarJeremy/anritsu-solver.git"
+  },
+  "keywords": [
+    "vlsm",
+    "node",
+    "react"
+  ],
+  "author": "edgarjeremy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdgarJeremy/anritsu-solver/issues"
+  },
+  "homepage": "https://github.com/EdgarJeremy/anritsu-solver#readme",
+  "dependencies": {
+    "bases": "^0.2.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "ip": "^1.1.5",
+    "ip-subnet-calculator": "^1.1.8",
+    "node-fetch": "^2.0.0"
+  }
+}

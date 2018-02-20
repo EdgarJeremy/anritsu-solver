@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anritsu Solver</title>
+    <script src="./assets/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <form action="" method="post" id="main_form">
+        <p>1. Main IP Address : </p>
+        <input class="ip_parts" type="text" name="main_ip_1" />
+        <input class="ip_parts" type="text" name="main_ip_2" />
+        <input class="ip_parts" type="text" name="main_ip_3" />
+        <input class="ip_parts" type="text" name="main_ip_4" /> /
+        <input class="subnet" type="text" name="subnet" />
+        <hr />
+        <p>2. Pembagian (Class)</p>
+        Number of host 1 :
+        <input type="text" name="input1" />
+        <br /> Number of host 2 :
+        <input type="text" name="input2" />
+        <br /> Number of host 3 :
+        <input type="text" name="input3" />
+        <br /> Number of host 4 :
+        <input type="text" name="input4" />
+        <br /> Number of host 5 :
+        <input type="text" name="input5" />
+        <br /> Number of host 6 :
+        <input type="text" name="input6" />
+        <br /> Number of host 7 :
+        <input type="text" name="input7" />
+        <br /> Number of host 8 :
+        <input type="text" name="input8" />
+        <br />
+
+        <input type="submit" value="Hitung" />
+        <hr />
+        <div id="main">
+            <p>A. Given IP Binary
+                <b id="ip_bin"></b>
+            </p>
+            <p>B. Given Mask</p>
+            <ol>
+                <li>Binary :
+                    <b id="mask_bin"></b>
+                </li>
+                <li>Decimal :
+                    <b id="mask_dec"></b>
+                </li>
+            </ol>
+            <p>C. IP Network Address</p>
+            <ol>
+                <li>Binary :
+                    <b id="net_bin"></b>
+                </li>
+                <li>Decimal :
+                    <b id="net_dec"></b>
+                </li>
+            </ol>
+            <p>D. First IP Host Address :
+                <b id="first_ip"></b>
+            </p>
+            <p>E. Last IP Host Address :
+                <b id="last_ip"></b>
+            </p>
+            <p>F. IP Broadcast Address :
+                <b id="broadcast"></b>
+            </p>
+            <p>G. Number of bits host :
+                <b id="nobh"></b>
+            </p>
+            <p>H. Number of host :
+                <b id="noh"></b>
+            </p>
+        </div>
+        <div id="table-append"></div>
+    </form>
+</body>
+<script src="./assets/app.js"></script>
+
+</html>
