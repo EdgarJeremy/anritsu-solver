@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .ip_parts {
     width: 60px;
     border: 1px solid #456fd4;
@@ -5,4 +8,22 @@
 .subnet {
     width: 50px;
     border: 1px solid #456fd4;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+body {
+    background-color: #222222;
+}
+#main_form input[type="text"] {
+    padding: 15px;
+}
+#main_form input[type="submit"] {
+    padding: 15px;
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
 }
