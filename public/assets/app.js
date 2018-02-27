@@ -4,9 +4,14 @@ $(function(){
     $mainForm = $("#main_form");
     $tableAppend = $("#table-append");
     $mainAppend = $("#main");
+    $splashContainer = $("#splash");
     
     $mainAppend.hide();
     $tableAppend.html("");
+
+    setTimeout(function(){
+        $splashContainer.fadeOut();
+    },2000);
 
     $mainForm.on("submit",function(ev){
         ev.preventDefault();
@@ -39,7 +44,7 @@ $(function(){
                 $("#noh").text(main.numHosts);
 
 
-                var table = "<table border='1px' cellpadding='10px'>";
+                var table = "<table border='1px' cellpadding='10px' width='100%'>";
                 table += "<thead><tr>"
                 table += "<td>Number of host</td>";
                 table += "<td>IP Subnet</td>";

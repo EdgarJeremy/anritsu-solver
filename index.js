@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const port = 8083;
 const bodyParser = require("body-parser");
-const fetch = require("node-fetch");
 const bases = require("bases");
 const ip = require("ip");
 const cidrlist = require("./src/cidr.json");
@@ -16,6 +15,7 @@ app.post("/hitung", function (req, res) {
     var main_ip = `${body.main_ip_1}.${body.main_ip_2}.${body.main_ip_3}.${body.main_ip_4}`;
     var subnet = body.subnet;
     var pbg = [];
+    
     for (var i = 1; i <= 8; i++) {
         pbg.push(body[`input${i}`]);
     }
@@ -46,7 +46,7 @@ app.post("/hitung", function (req, res) {
         lastNetwork = nextSubnet(iterInfo.broadcast);
         results.push(iterInfo);
     }
-    console.log(pbg);
+    
     lastResults = [];
     for(var i = 0; i < pbg.length; i++) {
         var pb = pbg[i];
@@ -67,8 +67,6 @@ app.post("/hitung", function (req, res) {
 app.listen(8083, function () {
     console.log(`App start at : ${port}`);
 });
-
-
 
 // ------- FUNCTIONS
 function ipDecToBin(ip) {

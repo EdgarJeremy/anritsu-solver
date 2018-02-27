@@ -1,6 +1,25 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+#splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("./splash.jpg");
+    background-size: cover;
+    background-position-y: -250px;
+    text-align: center;
+}
+#splash .loading-text {
+    font-size: 30px;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 50px;
+}
 .ip_parts {
     width: 60px;
     border: 1px solid #456fd4;
@@ -24,6 +43,14 @@ body {
 #main_form input[type="submit"] {
     padding: 15px;
     display: block;
-    background-color: #000000;
+    background-color: #222222;
     color: #ffffff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.overlay {
+    padding: 3px 7px;
+    background-color: #222222;
+    color: white;
 }

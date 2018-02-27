@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anritsu VLSM Solver</title>
     <script src="./assets/jquery-3.3.1.min.js"></script>
@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <h2>Anritsu VLSM Solver 0.1</h2>
+        <h2><span class="overlay">Anritsu VLSM Solver 0.1</span></h2>
         <form action="" method="post" id="main_form">
             <p>1. Main IP Address : </p>
             <input class="ip_parts" type="text" name="main_ip_1" />
@@ -82,6 +82,9 @@
             </div>
             <div id="table-append"></div>
         </form>
+    </div>
+    <div id="splash">
+        <span class="overlay loading-text">LOADING</span>
     </div>
 </body>
 <script src="./assets/app.js"></script>
